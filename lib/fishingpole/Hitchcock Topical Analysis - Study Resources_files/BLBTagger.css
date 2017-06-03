@@ -1,0 +1,149 @@
+#scriptDiv {
+	position:absolute;
+	top:0px;
+	min-width:1px;
+	min-height:1px;
+	z-Index:90;
+}
+
+#scriptDiv.hidden {
+	display:none;
+}
+
+#scriptDiv * {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	border:solid #000 0;
+}
+
+#blbTagger {
+	width:380px;
+	margin-bottom:7px;
+}
+
+#blbTagger .bubHead {
+	background-color:#637a9f;
+	border:solid #355488 1px;
+	border-bottom:solid #526b95 1px;
+	padding:1px 1px 0;
+	border-radius:3px 3px 0 0;
+}
+
+#blbTagger .bubHead div {
+	position:relative;
+	background-color:#587096;
+	border:solid #5c749a 2px;
+	border-bottom:solid #5c749a 0;
+	padding:1px 1px 0;
+	border-radius:2px 2px 0 0;
+
+}
+
+#blbTagger .bubHead div h1,
+#blbTagger .bubHead div h6 {
+	color:#fff;
+	font-weight:bold;
+	font-family:verdana,helvetica;
+	font-size:0.9em;
+	text-shadow: #355488 1px 1px 0;
+	padding:4px 7px 6px;
+	background-color:#627b9f;
+	border:solid #6980a3 1px;
+	border-bottom:solid #6980a3 0;
+	letter-spacing:0;
+	line-height:1em;
+}
+
+#blbTagger .bubBody {
+	overflow:auto;
+	text-align:left;
+	max-height:300px;
+	font-family:arial,helvetica;
+	color:#000;
+	line-height:20px;
+/*	padding:0 1px 1px; */
+	background-color:#fcfdfd;
+	border:solid #6980a3 1px;
+	border-width:0 2px 2px;
+	border-radius:0 0 3px 3px;
+	box-shadow: 0px 0px 30px #6980a3;
+}
+
+#blbTagger .bubBody div {
+	font-family:arial, helvetica;
+	font-size:0.9em;
+	padding: 7px 7px;
+	background-color:#f9fafb;
+}
+
+#blbTagger .bubBody div .vRef {
+	font-size:10px;
+	color:dimgrey;
+	position:relative;
+	top:-3px;
+	left:2px;
+}
+
+#blbTagger div div a:link, #blbTagger a:visited {
+	color:#39547f;
+	border-bottom:1px dotted #39547f;
+	text-decoration:none;
+}
+
+#blbTagger div div a:hover {
+	color:#39547f;
+	border-bottom:1px solid #39547f;
+	text-decoration:none;
+}
+
+#blbTagger .bubBody div a.ftnt {
+	font-size:0.8em;
+}
+
+#blbTagger .close {
+	background-color: #cdd8e4;
+	border: 1px solid #355488;
+	border-radius: 4px;
+	color: #6980a3;
+	font-size: 1em;
+	font-weight: bold;
+	height: 23px;
+	position: absolute;
+	right: 6px;
+	text-align: center;
+	top: 6px;
+	width: 30px;
+}
+
+#scriptDiv.noTouch #blbTagger .close {
+	display:none;
+}
+
+#blbTagger .close > span {
+    position: relative;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 911px) {
+	#blbTagger .bubBody div {
+		font-size:1.1em;
+		line-height: 1.4em;
+	}
+
+	#blbTagger {
+		width:360px;
+	}
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+	#blbTagger .bubBody div {
+		font-size:1.1em;
+		line-height: 1.4em;
+	}
+
+	#blbTagger {
+		width:320px;
+	}
+}

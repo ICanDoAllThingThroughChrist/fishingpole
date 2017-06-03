@@ -1,0 +1,1106 @@
+
+/* ######################### Column 1 ######################### */
+#bodyCol1 {
+	min-height:100%;
+	position:relative;
+	width:618px;
+	margin-left:19px;
+}
+
+#bodyCol1.nocrumbs {
+	margin-top:13px;
+}
+
+/* ######################### Crumbs ######################### */
+* #crumbs {
+	font-size:.65em;
+	text-transform:uppercase;
+	text-align:left;
+	margin:0;
+}
+
+#bodyCol1 > #crumbs {
+	font-size:.6em;
+/*
+	position:absolute;
+	top:-14px;
+*/
+}
+
+.readmore {font-size:.8em;text-transform:uppercase;}
+
+/* ######################### FB Preview ######################### */
+	body > #whole > #container > #fbPreview {width:1px;height:1px;margin:0 -1px -1px 0;padding:0;opacity:0;font-size:1px;}
+
+	body > #whole > #container > #fbPreview > img {width:1px;height:1px;margin:0 -1px -1px 0;padding:0;opacity:0;}
+
+/* ######################### Footer ######################### */
+#blbFooter {
+	width:560px;
+	z-index:10;
+	padding-bottom:60px;
+	margin-left: 48px;
+}
+
+.imageDisplay #blbFooter,
+.imageGallery #blbFooter {
+	width:100%;
+}
+
+#blbFooter > p {
+	text-align:center;
+	font-size:.6em;
+	text-transform:uppercase;
+}
+
+p.alert {
+	display:none;
+}
+
+
+/* ######################### citation ######################### */
+#citeBottom {
+	position:relative;
+	background-color:#FCFDFD;
+	border-radius:3px;
+	border:solid #c5d2e0 1px;
+	font-size:.75em;
+	margin:8px 0 0 60px;
+	padding:5px 10px;
+}
+
+#citeBottom > .citeCopy {
+	position:absolute;
+	top:6px;
+	left:-42px;
+	padding:6px 6px 6px 7px;
+	background-color:#FCFDFD;
+	border-radius:3px 0 0 3px;
+	border:solid #c5d2e0 1px;
+	border-width:1px 0 1px 1px;
+}
+
+#citeBottom > .citeCopy img {
+	cursor:pointer;
+}
+
+#citeBottom > .citeCopy + p {
+	color:#3d4d63;
+}
+
+#pageDesc {
+	padding:20px;
+	font-size:.9em;
+}
+
+#siteDesc {
+	width:76%;
+	border:solid red 1px;
+	padding:20px;
+	margin:50px 12% 0;
+	border-radius:4px;
+	font-size:.9em;
+	border:solid #c5d2e0 1px;
+	background-color:#f9fafb;
+	clear:both;
+}
+
+#siteDesc h1,
+#siteDesc h6 {
+	font-weight:bold
+}
+
+#siteDesc p {
+	padding-top:1.1em;
+}
+
+#siteDesc h1 + p,
+#siteDesc h6 + p {
+	padding-top:0;
+}
+
+
+
+/* ######################### theFoot ######################### */
+#theFoot {
+	position:relative;
+	bottom:-50px;
+	width:100%;
+	border-top:solid #363F4E 1px;
+	background-color:#575f6a;
+	text-align:center;
+}
+
+#bodTag.bible #theFoot {
+}
+
+#theFoot > table {
+	width:905px;
+	margin:25px auto 0;
+}
+
+#theFoot > table > tbody > tr > td {
+	padding-left:20px;
+}
+
+#theFoot > table > tbody > tr > td:first-child {
+	padding-left:0;
+}
+
+#theFoot > table > tbody > tr > td > h2 {
+	font-size:.9em;
+	font-weight:bold;
+	color:#dcdee0;
+	text-transform:uppercase;
+	padding-top:20px;
+	padding-bottom:3px;
+}
+
+#theFoot > table > tbody > tr > td > h2:first-child {
+	padding-top:0;
+}
+
+#theFoot > table > tbody > tr p {
+	font-size:.75em;
+	color:#fff;
+	padding-top:6px;
+	padding-left:10px;
+}
+
+#theFoot > table > tbody > tr:nth-child(3) p {
+	font-size:.9em;
+	font-weight:bold;
+	color:#fff;
+	padding-left:0;
+}
+
+#theFoot > table > tbody > tr:nth-child(5) p {
+	color:#DCDEE0;
+	padding-bottom:25px;
+}
+
+	padding-bottom:25px;
+#theFoot > table > tbody > tr p:first-child {
+	padding-top:0;
+}
+
+#theFoot > table > tbody > tr h2 + p {
+	padding-top:0;
+}
+
+#theFoot > table > tbody > tr p a {
+	color:#DCDEE0;
+}
+
+#theFoot > table > tbody > tr hr {
+	background-color: #fff;
+	height:2px;
+	margin:17px 0 20px;
+	border-bottom:solid #797F88 1px;
+}
+
+/* ######################### Column 2 ######################### */
+#bodyCol2 {
+	float:right;
+	width:338px;
+	padding-bottom:50px;
+	margin-right:48px;
+	margin-top:13px;
+
+/* Changes imposed by Dan to evaluate page width ideas */
+	margin-right:19px;
+}
+
+/* ######################### Squisher ######################### */
+#bodyCol1 > .bubble > .bubHead > div > .squisher {
+	position:absolute;
+	top:4px;
+	right:42px;
+	cursor:pointer;
+	border-width:0;
+}
+
+div#container.fullColumn > div#bodyCol1 {
+	width:963px;
+}
+
+div#container.fullColumn > div#bodyCol2 {
+	display:none;
+}
+
+div#container.fullColumn > div#pageControls {
+	right:26px;
+}
+
+div#container.fullColumn > div#pageControls > div#fontDrop {
+	right:-7px;
+	left:auto;
+	top:23px;
+}
+
+div#container.fullColumn > div#pageControls > div#fontDrop > img.fontClose{
+	left:3px;
+	right:auto;
+}
+
+/* ######################### Popup ######################### */
+.popup {
+	position:absolute;
+	z-index:99;
+	background-color:#e9eef1;
+	border-radius:5px;
+	background-color:#6980a3;
+	box-shadow:2px 2px 0 #fff;
+	display:none;
+}
+
+.popup > div > h1,
+.popup > div > h6 {
+	border:solid #355488 1px;
+	border-radius:5px 5px 0 0;
+	background-color:#6980a3;
+	font-family:verdana,helvetica;
+	font-weight:bold;
+	margin:0;
+	padding:4px 8px 2px;
+	font-size:.8em;
+	color:#fff;
+	text-shadow:1px 1px 0 #355488;
+	position:relative;
+}
+
+.popup > div > div {
+	border:solid #355488 1px;
+	border-top:0;
+	border-radius:0 0 5px 5px;
+	background-color:#e0e8f0;
+	font-size:.8em;
+	margin:0;
+	color:#000;
+}
+
+.popup > div > div > p {
+	padding:0 12px 10px;
+}
+
+.popup > div > div > blockquote {
+	padding:0 70px 10px;
+}
+
+.popup > div > div > p:first-child {
+	padding-top:10px;
+}
+
+.popup > div > div > div#answerButtons {
+	text-align:center;
+}
+
+.popup > div > div > div#answerButtons > button {
+	background-color: #E4EAEE;
+	border: 1px solid #627B9F;
+	border-radius: 3px 3px 3px 3px;
+	color: #355488;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 4px 12px;
+	text-shadow: 1px 1px 0 #F9FAFB;
+	margin:12px;
+}
+
+.popup > div > div > div#answerButtons > button:hover {
+	background-color: #5C7190;
+	border: 1px solid #355488;
+	color: #FFFFFF;
+	cursor: pointer;
+	text-shadow: 1px 1px 0 #344255;
+}
+
+.popup .close {
+	position:absolute;
+	top:4px;
+	right:5px;
+	font-weight:bold;
+	cursor:pointer;
+	background-color:#cdd8e4;
+	width:14px;
+	height:13px;
+	font-size:.8em;
+	text-align:center;
+	border-radius:2px;
+	border:solid #355488 1px;
+	color:#6980a3;
+}
+
+.popup .close > span {
+	position:relative;
+	top:-4px;
+}
+
+.popup #abbrvHelp {
+	padding: 10px 40px;
+	margin:auto;
+}
+
+.popup #abbrvHelp div > p.alert {
+	color:#9E0B0F;
+	font-weight:bold;
+	overflow:hidden;
+}
+
+.popup #abbrvHelp div > table {
+	margin-top:12px;
+}
+
+.popup #abbrvHelp div > table > tbody > tr > td {
+	padding:0px 6px;
+	font-size:.9em;
+}
+
+.popup #abbrvHelp div + div {
+	border-top:1px solid black;
+	margin-top:12px;
+	padding-top:7px;
+}
+
+.footPopup {
+	position:absolute;
+	z-index:99;
+	max-width:300px;
+	border:solid #355488 1px;
+	border-radius:5px;
+	background-color:#dee5ed;
+	font-size:.8em;
+	margin:0;
+	color:#000;
+	padding:10px 15px;
+	box-shadow:2px 2px 0 #fff;
+	display:none;
+}
+
+/* ######################### Pagination ######################### */
+#wordsData + div {
+	background-color:#fff;
+	margin:0 3px 3px;
+	padding:10px 0;
+}
+
+#pageCont {
+	margin:0 auto;
+	width:445px;
+	background-color:#fff;
+}
+
+#pageCont > thead > tr > th {
+	font-weight:bold;
+}
+
+#pageCont > thead > tr > th.exactNote {
+	font-weight:normal;
+	font-size:.8em;
+}
+
+#pageCont > thead > tr > td > div {
+	font-weight:bold;
+	font-size:1.4em;
+	color:#485c7d;
+	text-align:center;
+	border:solid #c5d2e0 1px;
+	padding:4px 5px;
+	background-color:#e9eef1;
+	border-radius:3px;
+}
+
+#pageCont > thead > tr > td.exactNote > p {
+	font-weight:bold;
+	font-size:.8em;
+	color:#9e0b0f;
+	text-align:center;
+}
+
+#pageCont > tbody > tr > td {
+	padding-top:7px;
+	padding-right:7px;
+}
+
+#pageCont > tbody > tr > td + td {
+	padding-right:0;
+	padding-left:7px;
+}
+
+#pageCont > tbody > tr > td > p {
+	margin:7px 0 0;
+}
+
+#pageCont > tbody > tr > td > p:first-child {
+	margin:0;
+}
+
+#pageCont > tbody > tr > td > p span {
+	display:block;
+	float:left;
+	border:solid #637c95 1px;
+	background-color:#c1d4e8;
+	color:#2f4d6e;
+	width:35px;
+	margin-bottom:7px;
+	border-radius:3px 0 0 3px;
+	padding:1px 5px;
+	font-size:.9em;
+	font-weight:bold;
+	text-shadow: #e9eef1 1px 1px 0;
+}
+
+#pageCont > tbody > tr > td > p span + span {
+	border-left-width:0;
+	border-color:#b4c3d3;
+	background-color:#e9eef1;
+	color:#2f4d6e;
+	width:175px;
+	border-radius:0 3px 3px 0;
+	padding-left:8px;
+	text-shadow: #fff 1px 1px 0;
+	font-weight:normal;
+}
+
+#pageCont > tbody > tr > td > p:hover span {
+	border-color:#2a384d;
+	background-color:#3f5477;
+	color:#fff;
+	text-shadow:#2a384d 1px 1px 0;
+}
+
+#pageCont > tbody > tr > td > p:hover span + span {
+	border-color:#3f5477;
+	background-color:#627B9F;
+	text-shadow:#3f5477 1px 1px 0;
+}
+
+#pageCont > tbody > tr > td > p.exactSplit:hover span + span {
+	border-color:#3f5477;
+	background-color:#627B9F;
+	text-shadow:#3f5477 1px 1px 0;
+	color:#fff;
+}
+
+#pageCont > tbody > tr > td > p.exactSplit:hover span + span + br + span + span {
+	border-top-color:#c5d2e0;
+}
+
+#lexicon > #lexResults > div > #pageCont {
+	font-size:1.15em;
+}
+
+#pageCont > tbody > tr > td > p.moreRefs2 {
+	cursor:default;
+}
+
+#pageCont > tbody > tr > td > p.moreRefs2 span {
+	border-color:#2a384d;
+	background-color:#3f5477;
+	color:#fff;
+	text-shadow:#2a384d 1px 1px 0;
+}
+
+#pageCont > tbody > tr > td > p.moreRefs2 span + span {
+	border-color:#3f5477;
+	background-color:#627B9F;
+	text-shadow:#3f5477 1px 1px 0;
+}
+
+#pageCont > tbody > tr > td > p.exactSplit span + span {
+	color:#2f4d6e;
+	border-radius:0 3px 0 0;
+	background-color:#d9e1e7;
+}
+
+#pageCont > tbody > tr > td > p.exactSplit span + span + br + span {
+	border-color:#fff;
+	background-color:#fff;
+	color:#fff;
+	text-shadow: #fff 1px 1px 0;
+}
+
+#pageCont > tbody > tr > td > p.exactSplit span + span + br + span + span {
+	color:#9e0b0f;
+	background-color:#e9eef1;
+	border-width:1px;
+	border-top-color:#fff;
+	border-radius:0 0 3px 3px;
+	position:relative;
+	top:-7px;
+}
+
+#pageCont > tbody > tr > td > p.moreRefs2.exactSplit {
+	cursor:default;
+}
+
+#pageCont > tbody > tr > td > p.moreRefs2.exactSplit span:first-child {
+	border-color:#2a384d;
+	background-color:#3f5477;
+	color:#fff;
+	text-shadow:#2a384d 1px 1px 0;
+}
+
+#pageCont > tbody > tr > td > p.moreRefs2.exactSplit span + span {
+	border-color:#3f5477;
+	border-top-color:#6980a3;
+	background-color:#627B9F;
+	text-shadow:#3f5477 1px 1px 0;
+	color:#fff;
+}
+
+#pageCont > tbody > tr > td > p.moreRefs2.exactSplit span + span + br + span + span {
+	background-color:#9e0b0f;
+}
+
+/* ######################### YUI History ######################### */
+#yui-history-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+}
+
+/* ######################### Universal Bible Content Style ######################### */
+span.yhwh {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-size: 0.8em;
+}
+
+span.vnum {
+	vertical-align: top;
+	font-size: 0.8em;
+	font-weight: normal;
+	font-style: normal;
+	color: #5C749A;
+}
+
+a.ftnt {
+	padding:0px;
+	vertical-align:top;
+	text-transform:lowercase;
+	font-size: 0.6em;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #8A8026;
+	cursor:pointer;
+}
+
+a.ftnt:hover {
+	text-decoration:none;
+}
+
+a.ftnt.ignored {
+	color:#5688A7;
+	font-size: unset;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	padding: unset;
+	text-transform: unset;
+	position:unset;
+}
+
+/* ######################### Generic return links ######################### */
+body > div > div > #bodyCol1 > .bubble > .return > a {
+	vertical-align:bottom;
+}
+
+body > div > div > #bodyCol1 > .bubble > .return > a {
+	position:relative;
+	top:-12px;
+	font-size:0.7em;
+	margin-left:12px;
+	border:solid #355488 1px;
+	border-radius:6px;
+	padding:2px 5px;
+	background-color:#869ab9;
+	color:#fff;
+	font-weight:bold;
+}
+
+body > div > div > #bodyCol1 > .bubble > .return > a:hover {
+	background-color:#a5b5cf;
+}
+
+.numDelimOff {
+	color:#bbb;
+}
+
+body > div > div > #bodyCol1 > .bubble > .bubBody > #userReg {
+	padding:20px;
+	font-size:0.9em;
+}
+
+body > div > div > #bodyCol1 > .bubble > .bubBody > #userReg > p + p {
+	margin-top:20px;
+}
+
+body > div > div > #bodyCol1 > .bubble > .bubBody > #userReg > h2 {
+	margin-bottom:20px;
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+/* ######################### SponsorSquish ######################### */
+body > #whole > #container > #bodyCol1 > #poniesSquish {
+	margin-left:21px;
+	height:150px;
+}
+
+body > #whole > #container > #bodyCol1 > #poniesSquish > div {
+	float:left;
+	margin-left:7px;
+	font-size:.7em;
+}
+
+body > #whole > #container > #bodyCol1 > #poniesSquish > div * {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+body > #whole > #container > #bodyCol1 > #poniesSquish > div:first-child {
+	margin-left:0;
+}
+
+body > #whole > #container > #bodyCol1 > #poniesSquish > div img {
+	border:1px solid #2D4874;
+}
+
+
+/* ######################### Bible Toolpop stuff ######################### */
+div.toolPop {
+	border:solid #c5d2e0 1px;
+	position:absolute;
+	/*		top:185px;
+	left:80px; */
+	background-color:#fff;
+	border-radius:6px;
+	padding:3px;
+	z-index:51;
+	display:none;
+}
+
+div.toolPop > table > tbody > tr > td > span {
+	border:solid #c5d2e0 1px;
+	/*border-width:1px 1px 1px 0;*/
+	/*border-radius:0 4px 4px 0;*/
+	background-color:#e9eef1;
+	padding:3px 4px 1px;
+	font-size:.75em;
+	font-weight:bold;
+	margin-top:3px;
+	color:#4b6080;
+	text-shadow: #f9fafb 1px 1px 0;
+	cursor:pointer;
+	display:block;
+	height:22px;
+	vertical-align:middle;
+}
+
+div.toolPop > table > tbody > tr > td#conc > span,
+div.toolPop > table > tbody > tr > td#conc + td > span	{
+	background-color:#b1d4ed;
+	border-color:#6a90ac;
+	color:#3e6987;
+}
+
+div.toolPop > table > tbody > tr > td#bibles > span,
+div.toolPop > table > tbody > tr > td#bibles + td > span	{
+	background-color:#e9c09f;
+	border-color:#ba8458;
+	color:#815430;
+}
+
+div.toolPop > table > tbody > tr > td#corr > span,
+div.toolPop > table > tbody > tr > td#corr + td > span	{
+	background-color:#c1bdd9;
+	border-color:#6e65a5;
+	color:#554d86;
+}
+
+div.toolPop > table > tbody > tr > td#comms > span,
+div.toolPop > table > tbody > tr > td#comms + td > span	{
+	background-color:#b6c59f;
+	border-color:#7e9955;
+	color:#586d37;
+}
+
+div.toolPop > table > tbody > tr > td#refs > span,
+div.toolPop > table > tbody > tr > td#refs + td > span	{
+	background-color:#dca9a6;
+	border-color:#a4544f;
+	color:#884743;
+}
+
+div.toolPop > table > tbody > tr > td#misc > span,
+div.toolPop > table > tbody > tr > td#misc + td > span	{
+	background-color:#9ce5e5;
+	border-color:#639e9e;
+	color:#2c6868;
+}
+/*
+div.toolPop > table > tbody > tr > td:first-child > span {
+	border-width:1px 0 1px 1px;
+	border-radius:4px 0 0 4px;
+}
+*/
+div.toolPop > table > tbody > tr:first-child > td > span {
+	margin-top:0;
+}
+
+div.toolPop > table > tbody > tr:hover > td > span {
+	border-color:#627b9f;
+	background-color:#bbcada;
+	text-shadow: #e9eef1 1px 1px 0;
+}
+/*
+div.toolPop > span {
+	border:solid #c5d2e0 1px;
+	background-color:#e9eef1;
+	border-radius:4px;
+	padding:2px 4px;
+	font-size:.75em;
+	font-weight:bold;
+	display:block;
+	margin-top:3px;
+	color:#4b6080;
+	text-shadow: #f9fafb 1px 1px 0;
+	cursor:pointer;
+}
+
+div.toolPop > span:first-child {
+	margin-top:0;
+}
+
+div.toolPop > span:hover {
+	border:solid #627b9f 1px;
+	background-color:#bbcada;
+	text-shadow: #e9eef1 1px 1px 0;
+}
+*/
+div.toolPop > img {
+	position:absolute;
+	left:-6px;
+	top:5px;
+	margin-top:3px;
+}
+
+div.toolPop:hover {
+	filter:alpha(opacity=100);
+	opacity:1;
+}
+
+.a_button {
+	background-color: #869ab9;
+	border: 1px solid #355488;
+	border-radius: 6px;
+	color: #fff;
+	font-weight: bold;
+	padding: 2px 5px;
+	text-align: center;
+	}
+.a_button:hover {
+	background-color:#a5b5cf;
+	color: #fff;
+	}
+
+
+/* ######################### donation drives ######################### */
+
+@font-face {
+	font-family: 'proxima_nova_ltlight';
+	src: url(//:) format('no404'), url('/assets/fonts/proximanova-light-webfont.woff') format('woff'), url('/assets/fonts/proximanova-light-webfont.ttf') format('truetype'), url('/assets/fonts/proximanova-light-webfont.svg#webfont4Qd1s3Ey') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima_nova_ltsemibold';
+	src: url(//:) format('no404'), url('/assets/fonts/proximanova-sbold-webfont.woff') format('woff'), url('/assets/fonts/proximanova-sbold-webfont.ttf') format('truetype'), url('/assets/fonts/proximanova-sbold-webfont.svg#webfont4Qd1s3Ey') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+div#drive_2016summerCoat {
+	background-color: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 510;
+}
+
+div#drive_2016summer.popoverDark {
+	z-index: 511;
+	font-family: Proxima;
+	padding:5px 50px;
+	/*background-color: #505050;*/
+	background-color: #213552;
+	border: 0.5px solid #fff;
+	color:#fff;
+	position:fixed;
+	text-align: center;
+}
+
+div#drive_2016summer.popoverDark * {
+	text-align:center;
+	vertical-align:baseline;
+}
+
+div#drive_2016summer.popoverDark > .header {
+	margin: 28px 0px 17px 0px;
+	font-size: 1.4em;
+	font-weight: 600;
+	/*letter-spacing: 1px;*/
+	font-family: proxima_nova_ltsemibold;
+}
+
+div#drive_2016summer.popoverDark > .header > span.textOuline{
+/*text-outline: 2px 2px #E9B440;*/
+	color: #E9B440;
+}
+
+div#drive_2016summer.popoverDark > .info {
+	margin: 0px 5px;
+	font-size: 1.2em;
+	font-family: proxima_nova_ltlight;
+}
+
+div#drive_2016summer.popoverDark > .footer {
+	display: inline-block;
+	margin: 19px 5px 6px 5px;
+	font-size: .9em;
+	font-family: proxima_nova_ltlight;
+}
+
+div#drive_2016summer div.buttonRoundy {
+	/*border: 2px solid #ddd;*/
+	border: 0px;
+	border-radius: 7px;
+	cursor: pointer;
+	/*width: 	242px;*/
+	/*height: 75px;*/
+	height: 65px;
+	width: 	270px;
+	margin: 19px 0px 17px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#drive_2016summer div.br {
+	height: 14px;
+	display: block;
+}
+
+div#drive_2016summer div.dismiss {
+	margin: 8px 0px 10px 0px;
+	cursor: pointer;
+}
+
+div#drive_2016summer div.buttonRoundy > span {
+	color: white;
+	text-decoration: none;
+}
+
+div#drive_2016summer div.buttonRoundy > span.massive {
+	font-weight: 600;
+	font-size: 1.9em;
+	/*letter-spacing: 1px;*/
+	/* Make text taller? */
+	font-family: proxima_nova_ltsemibold;
+}
+
+div#drive_2016summer div.buttonRoundy > span.massive:hover {
+	/*color: #E9B440;*/
+}
+
+/*div#drive_2016summer div.buttonRoundy:hover,*/
+div#drive_2016summer div.justText:hover,
+div#drive_2016summer div.dismiss:hover {
+	filter: invert(20%);
+}
+
+div#drive_2016summer div.justText {
+	cursor:pointer;
+	margin-top: 17px;
+	display: inline-block;
+}
+
+div#drive_2016summer div.justText > span.large {
+	font-weight: 600;
+	font-size: 1.2em;
+	letter-spacing: 1.25px;
+	margin: 5px;
+	font-family: proxima_nova_ltlight;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+div#drive_2016summer div.dismiss > span {
+	font-size: 1.2em;
+	letter-spacing: 1.2px;
+	font-family: proxima_nova_ltlight;
+	text-decoration: underline;
+}
+
+div#drive_2016summer div.dismiss > svg {
+	fill: #36424e;
+	stroke: white;
+	width: 29px;
+	position: relative;
+	top: 8px;
+}
+
+div#drive_2016summer div.dismiss > svg > circle {
+	stroke-width: 8;
+}
+
+div#drive_2016summer div.dismiss > svg > line {
+	stroke-width: 15;
+}
+
+div#drive_2016summer div.dismiss > span.xOut {
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 2px 7px;
+	font-size: 1.3em;
+	font-family: proxima_nova_ltlight;
+}
+
+div#drive_2016summer div.buttonRoundy > span.mini {
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+
+div#drive_2016summer div.buttonRoundy > span,
+div#drive_2016summer div.justText > span.normal {
+	font-size: 1.05em;
+	letter-spacing: 1px;
+}
+
+div#drive_2016summer .bgDkBlue {
+	background-color: #36424e;
+}
+
+div#drive_2016summer .bgLtBlue {
+	/*background-color: #1c4169;*/
+	background-color: #213552;
+}
+
+div#drive_2016summer .bgWhite {
+	background-color: white;
+}
+
+a.noUnderline:hover {
+	text-decoration: none;
+}
+div#drive_2016summer .bgCustom {
+	/*background-color: #7BC100;*/
+	/*background-color: #E9B440;*/
+	/*background-color: #3D9CBD;*/
+	background: transparent;
+	border: 2px solid #E9B440 !important;
+}
+
+div#drive_2016summer .bgCustom:hover {
+	background-color: #1c4169;
+	/*background-color: black;*/
+}
+
+div#drive_2016summer .bgWhite > span {
+	color: #213552 !important;	
+}
+
+
+div#drive_2016summer .bgCustom > span {
+	/*color: #213552 !important;	*/
+}
+
+div#drive_2016summerCoat.hidden,
+div#drive_2016summer.hidden {
+	display:none;
+}
+
+
+/* Fancy tooltip decorations */
+.tooltipped {
+  position:relative
+}
+.tooltipped:after {
+  position:absolute;
+  z-index:1000000;
+  display:inline-block;
+  text-decoration:none;
+  padding:5px 8px;
+  font:normal normal 11px/1.5 Helvetica,arial;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  text-shadow:none;
+  text-transform:none;
+  letter-spacing:normal;
+  word-wrap:break-word;
+  white-space:pre;
+  pointer-events:none;
+  content:attr(aria-label);
+  background:rgba(0,0,0,0.8);
+  border-radius:3px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+.tooltipped:before {
+  position:absolute;
+  z-index:1000001;
+  display:inline-block;
+  text-decoration:none;
+  width:0;
+  height:0;
+  color:rgba(0,0,0,0.8);
+  pointer-events:none;
+  content:"";
+  border:5px solid transparent;
+}
+.tooltipped-s:after {
+  top:100%;
+  right:50%;
+  margin-top:5px;
+}
+.tooltipped-s:before {
+  top:auto;
+  right:50%;
+  bottom:-5px;
+  margin-right:-5px;
+  border-bottom-color:rgba(0,0,0,0.8);
+}
+.tooltipped-s:after {
+  -webkit-transform:translateX(50%);
+  -ms-transform:translateX(50%);
+  transform:translateX(50%);
+}
+
+#copyTooltip {
+	position:fixed;
+	z-index: 10001;
+}
+/* Add hidden class items below */
+div.hidden,
+button.hidden,
+img.hidden,
+a.hidden,
+.bubble .bubBody div > p img.hidden {
+  display: none;
+}
+

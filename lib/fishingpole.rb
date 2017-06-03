@@ -1,0 +1,7 @@
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
+require 'httparty'
+require_relative './fishingpole/version'
+require_relative './fishingpole/cli'
+require_relative './fishingpole/poles'

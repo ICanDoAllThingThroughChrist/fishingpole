@@ -1,0 +1,261 @@
+
+
+@font-face {
+	font-family: Proxima;
+	src: url('https://go.blb.org/assets/fonts/proximaReg.woff');
+	/*font-size: 50%;*/
+}
+
+@font-face {
+	font-family:blbHebrew;
+	src: url('https://go.blb.org/assets/fonts/SBL_Hebrew.ttf');
+}
+
+@font-face {
+	font-family:blbGentium;
+	src: url('https://go.blb.org/assets/fonts/GentiumPlus-R.woff');
+}
+
+@font-face {
+	font-family: 'URWEgyptienneTMedRegular';
+	src: url('https://go.blb.org/assets/fonts/e046014t-webfont.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'URWEgyptienneTMedRegular';
+	src: url(//:) format('no404'), url('https://go.blb.org/assets/fonts/e046014t-webfont.woff') format('woff'), url('https://go.blb.org/assets/fonts/e046014t-webfont.ttf') format('truetype'), url('https://go.blb.org/assets/fonts/e046014t-webfont.svg#webfontH1BQkWHE') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AndaleMonoRegular';
+	src: url('/assets/fonts/andalemono-webfont.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AndaleMonoRegular';
+	src: url(//:) format('no404'), url('https://go.blb.org/assets/fonts/andalemono-webfont.woff') format('woff'), url('https://go.blb.org/assets/fonts/andalemono-webfont.ttf') format('truetype'), url('https://go.blb.org/assets/fonts/andalemono-webfont.svg#webfont4Qd1s3Ey') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+html, body {
+	width:100%;
+	height:100%;
+}
+
+body {
+	margin:0 auto;
+	padding:0;
+	background:#e9eef1 url('/assets/images/bg.gif');
+	text-align:center;
+	position:relative;
+	min-height:100%;
+	/*
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	*/
+}
+
+body * {
+	margin:0;
+	padding:0;
+	font-family:arial,helvetica;
+	text-align:left;
+	vertical-align:top;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+body > #whole {
+	width:100%;
+	background:transparent url('/assets/images/bg.png') repeat-x;
+	padding-top:19px;
+}
+
+body > #whole.wholeTop {
+	padding-top:88px;
+}
+
+body.bible > #whole.wholeTop,
+body.lexicon > #whole.wholeTop,
+body.hta > #whole.wholeTop,
+body.search > #whole.wholeTop{
+	padding-top:108px;
+}
+
+#container {
+	width:1001px;
+	margin:0 auto;
+	position:relative;
+	min-height:100%;
+	overflow:hidden;
+}
+
+* p {
+}
+
+* p:first-child {
+	padding-top:0;
+}
+
+* li {
+	list-style-position:outside;
+	margin-left:1em;
+	line-height:1.4em;
+}
+
+* li > * > li {
+	margin-left:20px;
+}
+
+* img {
+	border-width:0;
+}
+
+body * .center {text-align:center;}
+body * .justify {text-align:justify;}
+
+* .clear {
+	clear:both;
+	font-size:.1em;
+}
+
+.nowrap {
+	white-space:nowrap;
+}
+
+* a {
+	text-decoration:none;
+	color:#39547f;
+	cursor:pointer;
+}
+
+* a:hover {
+	text-decoration:underline;
+	color:#9e0b0f;
+}
+
+*::-moz-selection {
+	color:#3a4a71;background-color:#c5d4e7;
+}
+
+*::selection {
+	color:#3a4a71;background-color:#c5d4e7;
+}
+
+*[align=center],
+div[align=center] > p {
+	text-align:center;
+}
+
+* hr {
+	background-color:#778097;
+	height:1px;
+	margin-bottom:.3em;
+}
+
+* input[type=text],
+* input[type=password],
+* input[type=email],
+* select {
+	height:23px;
+	border:solid #627B9F 1px;
+	font-size:12px;
+	padding:3px 0 2px 4px;
+	border-radius:3px;
+	color:#999;
+}
+
+* input[type=text]:focus,
+* input[type=password]:focus,
+* input[type=email]:focus,
+* select:focus {
+	border:solid #516585 1px;
+	color:#40526e;
+}
+
+* input[type=submit] {
+	height:23px;
+	border:solid #91a6c3 1px;
+	font-size:12px;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:3px;
+	font-weight:bold;
+	background-color:#bbcada;
+	color:#546b7e;
+	text-shadow: 1px 1px 0 #e4eaee;
+	padding:3px;
+}
+
+* input[type=submit]:hover {
+	background-color:#869ab9;
+	color:#e9eef1;
+	text-shadow: 1px 1px 0 #869ab9;
+	border-color:#355488;
+	cursor:pointer;
+}
+
+* input[type=image] {
+	border-width:0;
+}
+
+* button {
+	border:solid #91a6c3 1px;
+	font-size:13px;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:3px;
+	font-weight:bold;
+	background-color:#bbcada;
+	color:#546b7e;
+	padding:0 5px;
+	margin-top:2px;
+}
+
+* button:hover {
+	background-color:#869ab9;
+	color:#e9eef1;
+	border-color:#355488;
+}
+
+* textarea {
+	border:solid #c2cfdf 1px;
+	color:#999;
+	border-radius:3px;
+	margin:0 0 15px;
+	width:100%;
+	height:80px;
+	padding:3px;
+	font-size:.8em;
+	resize:vertical;
+}
+
+* textarea:focus {
+	border:solid #516585 1px;
+	color:#40526e;
+}
+
+
+/*
+* input[type=text] {
+	padding:3px 0 2px 4px;
+	margin-right:4px;
+	color:#999;
+}
+
+* input[type=text]:focus {
+	border:solid #516585 1px;
+	color:#40526e;
+}
+*/

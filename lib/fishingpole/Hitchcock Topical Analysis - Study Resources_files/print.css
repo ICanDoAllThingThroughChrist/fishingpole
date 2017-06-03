@@ -1,0 +1,211 @@
+
+/* ######################### print-friendly stuff ######################### */
+  .print_only {display:none;}
+
+@media print {
+  .print_only {display:inherit;}
+	#broughtBy {margin-bottom:25px;font-size:.7em;}
+
+	* {background-color:transparent;}
+	
+  #bodyCol2, 
+  #appBar, 
+  body > #contextBarT, 
+  #menuTop, 
+  #betaTag, 
+  #homeLoginMenu, 
+  body > #theFoot, 
+  #copyOptions, 
+  #cBarClipT {
+    display:none;
+    }
+	
+	body, body > #whole, body > #whole > #container {margin:0;padding:0;width:100%;}
+
+	body.bible > #whole.wholeTop, body.lexicon > #whole.wholeTop, body.hta > #whole.wholeTop, body.search > #whole.wholeTop {
+    padding-top: 0;
+		}	
+	body > #whole.wholeTop {padding:0;background-image:none;}
+	
+	body > #whole.wholeTop > #container {min-height:100px;}
+
+	#toolsHndl {display:none;}	
+
+	#bodyCol1 {
+		width:100%;
+		margin:0;
+		padding:0;
+		background-color:transparent;
+		border-width:0;
+		}
+	#bodyCol1 > div > .bubHead,	#bodyCol1 > div > .bubHead > div {
+		width:100%;
+		margin:0;
+		padding:0;
+		background-color:transparent;
+		border-width:0;
+		}
+	#bodyCol1 > div > .bubHead > div > h1,
+	#bodyCol1 > div > .bubBody h1,
+	body > div > div > #bodyCol1 > .bubble > #bubBody > div > div > h1, body > div > div > #bodyCol1 > .bubble > #bubBody > .faqBody > h1 {
+		text-shadow:0 0 0 #000;
+		width:100%;
+		margin:0;
+		padding:0;
+		background-color:transparent;
+		border-width:0;
+		border-bottom:solid #000 1px;
+		color:#000;
+		}
+	#bodyCol1 > .bubble > #bubBody > div.bible table#bibleTable > tbody > tr > td > h1 {
+		border-bottom:solid #000 0;
+	}
+
+
+	#bodyCol1 > div > .bubHead > div > .squisher {
+		display:none;
+		}
+	#bodyCol1 > div > .bubBody {
+		border-width:0;
+		}
+
+	#bodyCol1 > div > .bubBody > .bible > #bibleTable > tbody > tr > td:first-child img {
+		display:none;
+		}
+	#bodyCol1 > div > .bubBody > .bible > #bibleTable > tbody > tr > td:first-child[colspan="3"] {
+		display:table-cell;
+		width:100%;
+		}
+	#bodyCol1 > div > .bubBody > .bible > #bibleTable > tbody > tr > td:first-child + td {
+		width:15%;
+		border-width:0;
+		}
+	#bodyCol1 > div > .bubBody > .bible > #bibleTable > tbody > tr > td:first-child + td img {
+		display:none;
+		}
+	#bodyCol1 > div > .bubBody > .bible > #bibleTable > tbody > tr > td:first-child + td + td {
+		width:85%;
+		border-width:0;
+		}
+	#bodyCol1 > div > .bubBody > .bible > #bibleTable > tbody > tr > td > p,	#bodyCol1 > div > .bubBody > .bible > table > tbody > tr > td > div {
+		border-width:0;
+		font-size:1em;
+		}
+	body.lexicon > #whole > #container > #bodyCol1 > .bubble .bubHead > div > h1 > em {
+		font-size:1.1em;
+		}
+	#bodyCol1 > div > .bubBody > #lexicon > div > h2,
+	#pageCont > tbody > tr > td > p.moreRefs2 span,
+	#pageCont > tbody > tr > td > p.moreRefs2 span + span {
+		text-shadow:0 0 0 #000;
+		}
+	#bodyCol1 > div > .bubBody > #lexicon > #lexSearch,
+	#bodyCol1 > div > .bubBody > #lexicon > table > tbody > tr > #lexDict *,
+	#bodyCol1 > div > .bubBody > #lexicon > #lexResults > div > #bibleTable > tbody > tr img,
+	#bodyCol1 > div > .bubBody > #lexicon > #lexResults > div > #bibleTable > tbody > tr > td:first-child {
+		display:none;
+		}
+	
+	#bodyCol1 > div > .bubBody > #lexicon > #lexTitle,
+	#bodyCol1 > div > .bubBody > #lexicon > #lexResults *,
+	#bodyCol1 > div > .bubBody > #lexicon > table td div {
+		border-width:0;
+		}
+	#bodyCol1 > div > .bubBody > #lexicon > #lexTitle,
+	#bodyCol1 > div > .bubBody > #lexicon > #lexResults > h2,
+	#bodyCol1 > div > .bubBody > #lexicon > #lexResults > div > table,
+	#bodyCol1 > div > .bubBody > #lexicon > table > tbody > tr > td > div:first-child {
+		padding:15px 0 0;
+		border-radius:0;
+		border-top:solid 1px #000;
+		}
+	#bodyCol1 > div > .bubBody > #lexicon > table > tbody > tr > td > div:first-child {
+		}
+	#bodyCol1 > div > .bubBody > #lexicon > #lexTitle > h1 {
+		text-align:left;
+		}
+	
+	
+  #bodyCol1 > .bubble > .bubBody > div > h2 {
+    font-size:1.25em;
+    }
+  #bodyCol1 > .bubble > .bubBody > div > p {
+    font-size:1.15em;
+    font-family:times new roman, times, roman, serif;
+    }
+
+	#container > #pageControls {
+		display:none;
+		}
+
+
+	img[src="http://v3-dev.blueletterbible.org/assets/images/tabs/tabInterlinear_a.png"],
+	img[src="http://v3-dev.blueletterbible.org/assets/images/tabs/tabBibles_a.png"],
+	img[src="http://v3-dev.blueletterbible.org/assets/images/tabs/tabCrossrefs_a.png"],
+	img[src="http://v3-dev.blueletterbible.org/assets/images/tabs/tabCommentaries_a.png"],
+	img[src="http://v3-dev.blueletterbible.org/assets/images/tabs/tabDictionaries_a.png"],
+	img[src="http://v3-dev.blueletterbible.org/assets/images/tabs/tabMisc_a.png"],
+	tbody#concTable > tr > td:nth-child(2) *,
+	tbody#concTable > tr > td:nth-child(5) *,
+	#interClose,
+	#interVSinter span[class="off"] {
+		display:none;
+		}
+	
+	tbody#concTable > tr > td:nth-child(3) {
+		text-align:left;
+		}
+
+	body.imageDisplay > div > div > #imgParade,
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgData > .imgNavB,
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgBody > #imgArrowAlert,
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgBody > * {
+		display:none;
+		}
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgBody > #imgPrint {
+		display:block;
+		}
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgData {
+		border-width:0;
+		border-top:solid #000 1px;
+		margin-top:15px;
+		padding-top:15px;
+		text-align:left;
+		position:inherit;
+		}
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgData > .textPop {
+		position:inherit;
+		bottom:inherit;
+		}
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgData > .textPop.hide {
+		display:block;
+		}
+	body.imageDisplay > div > div > #bodyCol1 > div > #imgData > .textPop > div {
+		width:100%;
+		text-align:left;
+		font-size:1.1em;
+		opacity:1;
+		border-width:0;
+		margin:0;
+		padding:0;
+		}
+	body.imageDisplay > div > div > #bodyCol1 > #imgDisclaimer {
+		display: none;
+		}
+		
+	body.imageDisplay > div > div > #bodyCol1 > div > .bubHead > div > h1 {
+		font-size:1.3em;
+		margin-bottom:15px;
+		}
+.bible .bibleTable > tbody > tr > td + td + td > p,
+.bible .bibleTable > tbody > tr > td + td + td > div {
+    color:#000;
+}
+	.bible .bibleTable > tbody > tr > td:first-child div,
+	.bible .bibleTable > tbody > tr > td:first-child p {
+			color:#000;
+	}
+	a.ftnt {color:#000;}
+	
+
+}

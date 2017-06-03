@@ -1,0 +1,1287 @@
+
+/* ######################### Menu Top ######################### */
+#menuTop {
+	position:fixed;
+	z-index:100;
+	text-align:center;
+	width:100%;
+	background-color:#575f6a;
+	border:solid #363f4e 1px;
+	padding:1px 1px 0;
+}
+
+#menuTop.top {
+	top:0;
+	border-radius:0;
+}
+
+#menuTop.bottom {
+	bottom:0;
+	border-radius:0 0 3px 3px;
+}
+
+#menuTop > p {
+	width:612px;
+	margin:-2px auto -1px;
+}
+
+#menuTop > p > a > img {
+	border-width:0;
+}
+
+#menuTop > .menuDrop {
+	position:absolute;
+	left:50%;
+	width:750px;
+	margin:0 0 0 -375px;
+	background-color:#f84b4c;
+	border:solid #363f4e 1px;
+	border-width:0 1px 1px;
+	border-radius:0 0 5px 5px;
+	padding:1px;
+	opacity:0;
+	display:none;
+}
+
+#menuTop.top > .menuDrop {
+	top:29px;
+}
+
+#menuTop.bottom > .menuDrop {
+	bottom:29px;
+}
+
+#menuTop > #searchDrop {
+	background-color:#39a3da;
+	width:650px;
+	margin:0 0 0 -325px;
+}
+
+#menuTop > #studyDrop {
+	background-color:#f84b4c;
+	width:500px;
+	margin:0 0 0 -250px;
+}
+
+#menuTop > #devotionsDrop {
+	background-color:#4ad6b3;
+	width:550px;
+	margin:0 0 0 -275px;
+}
+
+#menuTop > #helpDrop {
+	background-color:#f0e356;
+	width:564px;
+	margin:0 0 0 -282px;
+}
+
+#menuTop > #productsDrop {
+	background-color:#bc5edf;
+	width:400px;
+	margin:0 0 0 -200px;
+}
+
+#menuTop > #ministryDrop {
+	background-color:#e2ad47;
+	width:400px;
+	margin:0 0 0 -200px;
+}
+
+#menuTop > #aboutDrop {
+	background-color:#72c83f;
+	width:500px;
+	margin:0 0 0 -250px;
+}
+
+#menuTop > #donationsDrop {
+	background-color:#ec7a42;
+	width:400px;
+	margin:0 0 0 -100px;
+}
+
+#menuTop > .menuDrop > div {
+	width:100%;
+	background-color:#e21b1c;
+	border-radius:0 0 3px 3px;
+	padding:3px;
+}
+
+#menuTop > #searchDrop > div {
+	background-color:#108dce;
+}
+
+#menuTop > #studyDrop > div {
+	background-color:#f84b4c;
+}
+
+#menuTop > #devotionsDrop > div {
+	background-color:#00bf99;
+}
+
+#menuTop > #helpDrop > div {
+	background-color:#dbcc23;
+}
+
+#menuTop > #productsDrop > div {
+	background-color:#a545cd;
+}
+
+#menuTop > #ministryDrop > div {
+	background-color:#dd9700;
+}
+
+#menuTop > #aboutDrop  > div{
+	background-color:#4fb721;
+}
+
+#menuTop > #donationsDrop > div {
+	background-color:#e75c18;
+}
+
+#menuTop > .menuDrop > div > div {
+	width:100%;
+	background:#fff url('/assets/images/menu/menuBG.png');
+	border:solid #3e4653 1px;
+	border-radius:1px;
+	padding:2px 10px 10px;
+}
+
+#menuTop > .menuDrop > div > div > h6 {
+	font-family:verdana,helvetica;
+	font-size:1.8em;
+	font-weight:bold;
+	color:#42464C;
+}
+
+#menuTop > .menuDrop > div > div > table > tbody > tr > td > h2 {
+	font-size:.85em;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#575f6a;
+}
+
+#menuTop > .menuDrop > div > div > table > tbody > tr > td > h2 > a {
+	color:#575f6a;
+}
+
+#menuTop > .menuDrop > div > div > table > tbody > tr > td > h2 > a:hover {
+	color:#39547f;
+}
+
+#menuTop > .menuDrop > div > div > table > tbody > tr > td > p + h2 {
+	padding-top:8px;
+}
+
+#menuTop > .menuDrop > div > div > table > tbody > tr > td > form > p,
+#menuTop > .menuDrop > div > div > table > tbody > tr > td > p {
+	font-size:.75em;
+	padding-left:15px;
+	line-height:1.5em;
+}
+
+#menuTop > .menuDrop > div > div > table > tbody > tr > td > p.sub {
+	padding-left:30px;
+}
+
+/* STUDY */
+
+#menuTop > #studyDrop > div > div > table > tbody > tr > td + td {
+	padding-left:60px;
+}
+
+/* OLD STUFF FROM THE SPLIT WINDOW DROPS
+#menuTop > #studyDrop > div > div > table > tbody > tr > td > h1 {
+	font-family:verdana,helvetica;
+	font-size:1.8em;
+	font-weight:bold;
+	color:#42464C;
+}
+
+#menuTop > #studyDrop > div > div {
+	width:100%;
+	background-color:transparent;
+	border:solid #3e4653 0;
+	border-radius:1px;
+	padding:0;
+}
+
+#menuTop > #studyDrop > div > div > table {
+	width:100%;
+	background-color:#f84b4c;
+}
+
+#menuTop > #studyDrop > div > div > table > tbody > tr > td {
+	background:#fff url('/assets/images/menuBG.png');
+	border:solid #3e4653 1px;
+	border-radius:1px;
+	padding:2px 10px 10px;
+}
+
+#menuTop > #studyDrop > div > div > table > tbody > tr > td.col1 {
+	width:240px;
+}
+
+#menuTop > #studyDrop > div > div > table > tbody > tr > td.col2 {
+	width:4px;
+	background-color:#f84b4c;
+	background-image:none;
+	border-width:0;
+	padding:0;
+}
+
+#menuTop > #studyDrop > div > div > table > tbody > tr > td.col3 {
+}
+
+#menuTop > #studyDrop > div > div > table > tbody > tr > td > table p {
+	font-size:.75em;
+	padding-left:15px;
+	line-height:1.5em;
+}
+
+ */
+
+/* DEVOTIONS */
+#menuTop > #devotionsDrop > div > div > table > tbody > tr > td + td {
+	padding-left:30px;
+}
+
+#menuTop > #devotionsDrop > div > div > table h2 {
+	font-size:.85em;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#575f6a;
+}
+
+#menuTop > #devotionsDrop > div > div > table .devoIndexTOC {
+	font-size:.8em;
+	margin-bottom:20px;
+	padding-left:20px;
+}
+
+/* SEARCH */
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > form + h2 {
+	margin-top:20px;
+}
+
+#menuTop > #searchDrop > div > div #menuSelectDropU,
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > form input,
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > form button {
+	margin-left:4px;
+}
+
+#menuSelectedSearchImg,
+#mvMenuFormSelectedSearchImg {
+	width:51px;
+	height: 23px;	
+}
+
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > form input ~ a {
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 3px 0 7px 4px;
+}
+
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > form input ~ a:hover {
+	text-decoration:none;
+}
+
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > .dictMenu {
+	width:289px;
+	margin:3px 0 10px;
+	background-color:#e4eaee;
+	border:solid #5c749a 1px;
+	padding:5px 20px;
+	border-radius:5px;
+	text-align:center;
+	position:relative;
+}
+
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > .dictMenu > span {
+	font-family:'URWEgyptienneTMedRegular',Georgia,helvetica,verdana,arial,sans serif;
+	font-size:1.2em;
+	text-transform:capitalize;
+	color:#dadfe7;
+	text-shadow: #f9fafb 1px 1px 1px;
+}
+
+#menuTop > #searchDrop > div > div > table > tbody > tr > td > .dictMenu > span > a  {
+	font-family:'URWEgyptienneTMedRegular',Georgia,helvetica,verdana,arial,sans serif;
+	color:#8a9bb3;
+}
+
+#menuTop > #searchDrop > div > div > table > tbody > tr > td {
+	width:50%;
+}
+
+/*
+#menuTop > #searchDrop > div > div > table > tbody > tr > td + td {
+	position:relative;
+}
+
+#shAdvOptMenu {
+	font-size:.75em;
+}
+*/
+
+#mvFormItemsMenu > textarea {
+	margin-bottom:5px;
+	margin-top:0;
+}
+
+#advOptMenu {
+	position:absolute;
+	top:59px;
+	left:160px;
+	width:285px;
+	padding-top:6px;
+	background-color:#e2a23c;
+	border:solid #7b5e30 1px;
+	border-radius:6px;
+	z-index:601;
+	display:none;
+}
+#advOptMenu > div {
+	position:relative;
+	top:-3px;
+	left:3px;
+	width:277px;
+	font-size:.7em;
+	background-color:#f5f7f9;
+	border:solid #7b5e30 1px;
+	border-radius:4px;
+	padding:8px;
+}
+
+#mvOptionsMenu {
+	position:absolute;
+	top:56px;
+	left:-33px;
+	width:460px;
+	padding-top:6px;
+	background-color:#e2a23c;
+	border:solid #7b5e30 1px;
+	border-radius:6px;
+	z-index:601;
+	display:none;
+}
+
+#mvOptionsMenu > div {
+	position:relative;
+	top:-3px;
+	left:3px;
+	width:452px;
+	font-size:.7em;
+	background-color:#f5f7f9;
+	border:solid #7b5e30 1px;
+	border-radius:4px;
+	z-index:602;
+}
+
+
+#advOptMenu > div > p {
+	font-size:1.1em;
+	margin:0;
+	padding:0;
+	color:#37404f;
+}
+
+#advOptMenu > div > p > span {
+	font-size:.9em;
+	color:#90a5bc;
+	text-transform:uppercase;
+}
+
+#advOptMenu  > div> p:nth-last-child(1) {
+	font-size:.8em;
+	color:#9e0b0f;
+}
+
+#advOptMenu > div > p > select {
+	margin:0 0 12px;
+	width:180px;
+}
+
+#advOptMenu > div > p > input[type="text"] {
+	margin:0 0 3px;
+	width:100%;
+}
+
+#advOptMenu > div > #clearOptSearchWedge  {
+	width:100%;
+	text-align:center;
+}
+
+#advOptMenu > div > #clearOptSearchWedge > #clearAnchorSearchWedge {
+	display:block;
+	margin:0 auto 6px;
+	width:160px;
+	border-radius:5px;
+	border:solid #580a07 1px;
+	background-color:#8b110e;
+	padding:2px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+}
+
+#advOptMenu > div > #clearOptSearchWedge > #clearAnchorSearchWedge:hover {
+	background-color:#9f9b62;
+	border:solid #887f35 1px;
+	color:#fff;
+	text-decoration:none;
+}
+
+#advOptMenu > .menuOptionsClose {
+	position:absolute;
+	top:5px;
+	left:255px;
+	cursor:pointer;
+	padding-top:0;
+	background-color:transparent;
+	border-width:0;
+	width:0;
+	height:0;
+}
+
+#mvOptionsMenu td {
+	padding:10px 15px;
+	position:relative;
+}
+
+
+#mvOptionsMenu td > .menuOptionsClose {
+	position:absolute;
+	top:1px;
+	right:1px;
+	cursor:pointer;
+	padding-top:0;
+	background-color:transparent;
+	border-width:0;
+	width:15px;
+	height:15px;
+}
+
+#mvOptionsMenu td > div > div {
+	border:1px solid #f9fafb;
+	padding:0px 2px;
+}
+
+#mvOptionsMenu td > div > div:hover {
+	background-color: #f8f8da;
+	border-color:#d1cea1;
+	border-radius:3px 3px 3px 3px;
+	cursor:pointer;
+}
+
+#mvOptionsMenu td > div.numDelimOff > div:hover {
+	cursor:default;
+	border:1px solid #f9fafb;
+	background-color:transparent;
+}
+
+#mvOptionsMenu td > div:nth-child(3) {
+	margin-top:8px;
+}
+
+#mvOptionsMenu td > div > div >img {
+	padding-top:3px;
+}
+
+#mvOptionsMenu + h2 {
+	margin-top:20px;
+}
+
+
+
+
+#mvOptionsMenu td > .menuOptionsArrow {
+	position:absolute;
+	top:85px;
+	right:-17px;
+	padding-top:0;
+}
+
+#advOptMenu > .menuOptionsArrow {
+	position:absolute;
+	top:24px;
+	left:-21px;
+	padding-top:0;
+	background-color:transparent;
+	border-width:0;
+	width:0;
+	height:0;
+}
+
+#menuSearchSel,
+#mvMenuFormSearchSel {
+	position:absolute;
+	left:90px;
+	top:97px;
+	width:224px;
+	padding:0 0 0 5px;
+	border-radius:5px;
+	border:solid #a5b5c6 1px;
+	background-color:#dee7e9;
+	z-index:50;
+	display:none;
+}
+
+#mvMenuFormSearchSel {
+	left:218px;
+	top:182px;
+}
+
+#menuSearchSel > div,
+#mvMenuFormSearchSel > div {
+	position:relative;
+	float:left;
+	border:solid #c5d2e0 1px;
+	border-width:0 1px;
+	background-color:#eaeff2;
+	margin-right:5px;
+	padding:7px 0;
+}
+
+#menuSearchSel > div > img,
+#mvMenuFormSearchSel > div > img {
+	position:absolute;
+	top:-17px;
+	left:17px;
+}
+
+#menuSearchSel > div ~ img,
+#mvMenuFormSearchSel > div ~ img {
+	display:none;
+}
+
+#menuSearchSel > div > img.appClose,
+#mvMenuFormSearchSel > div > img.appClose {
+	position:absolute;
+	top:-5px;
+	left:119px;
+	cursor:pointer;
+}
+
+#menuSearchSel > div + div + div,
+#mvMenuFormSearchSel > div + div + div {
+	background-color:#f2f4e3;
+}
+
+#menuSearchSel > div > span,
+#mvMenuFormSearchSel > div > span {
+	font-size:.9em;
+	font-weight:bold;
+	width:65px;
+	text-align:center;
+	display:block;
+	padding:3px 8px;
+	color:#627b9f;
+	cursor:pointer;
+}
+
+#menuSearchSel > div > span:hover,
+#mvMenuFormSearchSel > div > span:hover {
+	background-color:#ced9e5;
+}
+
+#menuSearchSel > div > span.null:hover,
+#mvMenuFormSearchSel > div > span.null:hover {
+	background-color:#eaeff2;
+}
+
+#menuSearchSel > div + div + div > span,
+#mvMenuFormSearchSel > div + div + div > span {
+	color:#74775d;
+}
+
+#menuSearchSel > div + div + div > span:hover,
+#mvMenuFormSearchSel > div + div + div > span:hover {
+	color:#555842;
+	background-color:#d4d7c1;
+}
+
+#menuSearchSel > div + div + div > span.null:hover,
+#mvMenuFormSearchSel > div + div + div > span.null:hover {
+	background-color:#f2f4e3;
+}
+
+/* ABOUT THE BLB */
+#menuTop > #aboutDrop > div > div > table > tbody > tr > td.col1 {
+	width:150px;
+}
+
+#menuTop > #aboutDrop > div > div > table > tbody > tr > td.col2 {
+	width:270px;
+}
+
+#menuTop > #aboutDrop > div > div > table > tbody > tr > td.col3 {
+	width:177px;
+}
+
+#menuTop > #aboutDrop > div > div > table > tbody > tr > td.col3 > .menuContribute > span {
+	font-size:2.8em;
+	font-weight:bold;
+	color:#e7e7e7;
+	padding-right:3px;
+	position:relative;
+	top:7px;
+}
+
+#menuTop > #aboutDrop > div > div > table > tbody > tr > td.col3 > .menuContribute > input {
+	height:auto;
+	font-size:1.8em;
+	width:110px;
+}
+
+#menuTop > #aboutDrop > div > div > table > tbody > tr > td.col3 > .menuContribute + p {
+	font-size:.7em;
+	padding-left:37px;
+}
+
+/* MINISTRIES */
+
+#menuTop > #ministryDrop > div > div > table > tbody > tr > td.col1 > p + p > a > img {
+	padding-top:6px;
+	}
+#menuTop > #ministryDrop > div > div > table > tbody > tr > td + td {
+	padding-left:40px;
+}
+
+/* SUPPORT */
+#menuTop > #helpDrop > div > div > table > tbody > tr > td > h2:first-child {
+	padding-bottom:4px;
+}
+
+#menuTop > #helpDrop > div > div > table > tbody > tr > td > p > a > img {
+	padding-right:15px;
+	padding-bottom:12px;
+}
+
+#menuTop > #helpDrop > div > div > table > tbody > tr > td + td {
+/*	padding-left:60px; */
+}
+
+/* PRODUCTS */
+#menuTop > #productsDrop > div > div > table > tbody > tr > td + td {
+	padding-left:40px;
+}
+
+/* DONATIONS */
+#menuTop > #donationsDrop > div > div > table > tbody > tr > td > form > .menuContribute > span {
+	font-size:2.8em;
+	font-weight:bold;
+	color:#e7e7e7;
+	padding-right:3px;
+	position:relative;
+	top:7px;
+}
+
+#menuTop > #donationsDrop > div > div > table > tbody > tr > td > form > .menuContribute > input {
+	height:auto;
+	font-size:1.8em;
+	width:110px;
+}
+
+#menuTop > #donationsDrop > div > div > table > tbody > tr > td > form > .menuContribute > input[type="submit"] {
+	padding-top:3px;
+	padding-bottom:0;
+}
+
+#menuTop > #donationsDrop > div > div > table > tbody > tr > td > form > .menuContribute + p {
+	font-size:.7em;
+	padding-left:37px;
+}
+
+/* MENU ARROWS */
+#menuTop > .menuDrop > #menuArrow {
+	position:absolute;
+	left:150px;
+	width:27px;
+	height:14px;
+	background-color:transparent;
+	border-width:0;
+	padding:0;
+	margin:0;
+}
+
+#menuTop.top > .menuDrop > #menuArrow {
+	top:-9px;
+}
+
+#menuTop.bottom > .menuDrop > #menuArrow {
+	bottom:-8px;
+}
+
+/*
+#menuTop > #searchDrop > #menuArroUp {
+	left:175px;
+}
+
+#menuTop > #studyDrop > #menuArroUp {
+	left:240px;
+}
+
+#menuTop > #devotionsDrop > #menuArroUp {
+	left:315px;
+}
+
+#menuTop > #helpDrop > #menuArroUp {
+	left:388px;
+}
+
+#menuTop > #aboutDrop > #menuArroUp {
+	left:460px;
+}
+
+#menuTop > #ministryDrop > #menuArroUp {
+	left:545px;
+}
+
+*/
+
+/* KNOW GOD */
+
+#menuTop > .menuDrop > div > div > .knowGod {
+	border:solid #000 1px;
+	border-radius:4px;
+	background-color:#f5f4e3;
+	padding:5px;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+#menuTop > .menuDrop > div > div > .	knowGod:hover {
+	background-color:#eae8ca;
+}
+
+#menuTop > .menuDrop > div > div > .knowGod > p {
+	font-size:.85em;
+	text-align:center;
+}
+
+#menuTop > #searchDrop > div > div > .knowGod {
+	margin-left:100px;
+	margin-right:100px;
+}
+
+/* Login located at the top right of each page */
+body#bodTag > #menuTop > #homeLoginMenu {
+	position:absolute;
+	top:8px;
+	right:11px;
+	font-size:.7em;
+	font-weight:bold;
+	color:#fff;
+	z-index:101;
+}
+
+body#bodTag > #menuTop > #homeLoginMenu > p a {
+	color:#e1e1e1;
+}
+
+body#bodTag > #menuTop > #homeLoginMenu > p > #homeGear > img {
+	background-color:#8198b9;
+	border:solid #363f4e 1px;
+	border-top-width:0;
+	border-radius:0;
+	padding:6px 6px 4px;
+	margin-left:4px;
+	margin-top:-9px;
+	margin-right:-7px;
+}
+body#bodTag > #menuTop > #homeLoginMenu > p > #homeGear > img:hover {
+	background-color:#5686cb;
+}
+
+/* ######################### Log-in popover - Main ######################### */
+
+#clearCoat {
+	z-index:510;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#000;
+	opacity:0;
+	display:none;
+}
+
+#homeLogin {
+	position:fixed;
+	top:200px;
+	left:270px;
+	z-index:510;
+	background-color:#e4eaee;
+	border:solid #b9c8dd 1px;
+	border-radius:7px;
+	width:366px;
+	padding:14px;
+	opacity:0;
+	display:none;
+}
+
+#homeLogin > #homeLoginClose {
+	position:absolute;
+	top:3px;
+	right:3px;
+	cursor:pointer;
+}
+
+#bodyCol2 >  .bubble > .bubBody > div > div > form  {
+	text-align:center;
+	padding:0 22px 6px;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=text] {
+	width:214px;
+	height:23px;
+	border:solid #c2cfdf 1px;
+	margin-right:4px;
+	margin-left:10px;
+	font-size:12px;
+	padding:3px 0 2px 4px;
+	border-radius:3px;
+	color:#999;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=password] {
+	height:23px;
+	border:solid #c2cfdf 1px;
+	font-size:12px;
+	padding:4px 0 0 2px;
+	border-radius:3px;
+	color:#999;
+	width:90px;
+	margin:0 4px 0 0;
+}
+
+#homeLogin > .bubBody > div > div > form input:focus {
+	color:#333;
+}
+
+#homeLogin.login > .bubBody > div > div > form input[type=password] {
+	height:23px;
+	border:solid #c2cfdf 1px;
+	font-size:12px;
+	padding:3px 0 2px 4px;
+	border-radius:3px;
+	color:#999;
+	width:90px;
+	margin:0 4px 0 0;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=text]:focus, #homeLogin > .bubBody > div > div > form input[type=password]:focus {
+	border:solid #516585 1px;
+	color:#40526e;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=submit] {
+	height:23px;
+	border:solid #91a6c3 1px;
+	font-size:12px;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:3px;
+	font-size:.9em;
+	font-weight:bold;
+	background-color:#bbcada;
+	color:#546b7e;
+	text-shadow: 1px 1px 0 #e4eaee;
+	padding-bottom:3px;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=submit]:hover {
+	background-color:#869ab9;
+	color:#e9eef1;
+	text-shadow: 1px 1px 0 #869ab9;
+	border-color:#355488;
+	cursor:pointer;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=image] {
+	border-width:0;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=image] {
+}
+
+#homeLogin > .bubBody > div > div > form input[type=image] ~ a {
+	display:block;
+	float:right;
+	font-weight:bold;
+	padding:3px 0 7px;
+}
+
+#homeLogin > .bubBody > div > div > form input[type=image] ~ a:hover {
+	text-decoration:none;
+}
+
+#homeLogin > .bubBody > div > div > form img  {
+	border-width:0;
+}
+
+#homeLogin > .bubBody > div > div > form p  {
+	padding:.7em 0 0;
+}
+
+#homeLogin > .bubBody > .bubBody > div > div > form input[type=text] {
+	float:left;
+}
+
+/* ######################### Log-in popover - Login Bubble ######################### */
+#homeLogin > .bubBody > #login01 > div {
+	padding:8px 22px;
+}
+
+#homeLogin > .bubBody > #login01 > div > form > p {
+	clear:left;
+	position:relative;
+	padding-top:0;
+	font-size:0.8em;
+}
+
+#homeLogin > .bubBody > #login01 > div > form > p > span {
+	display:block;
+	font-size:.9em;
+	color:#90a5bc;
+	float:left;
+	text-transform:uppercase;
+}
+
+#homeLogin > .bubBody > #login01 > div > form > p+p+p {
+	margin:12px;
+}
+
+#homeLogin > .bubBody > #login01 > div > form > p:first-child > span:first-child {
+	margin-left:10px;
+}
+
+#homeLogin > .bubBody > #login01 > div > form > p:first-child > span:first-child + span {
+	position:absolute;
+	left:164px;
+}
+
+#homeLogin > .bubBody > #login01 > div > p:first-child {
+	color:#9e0b0f;
+	font-weight:bold;
+	font-size:1.1em;
+	text-align:center;
+	padding-bottom:8px;
+}
+
+#homeLogin > .bubBody > #login01 > div > form input[type=text]:first-child {
+	width:150px;
+	margin:0 4px 0 10px;
+}
+
+#homeLogin > .bubBody > #login01 > div > form input[type=password] {
+	width:70px;
+	margin:0 4px 0 0;
+}
+
+#homeLogin > .bubBody > #login01 > div > p {
+	text-align:center;
+	font-size:0.8em;
+	margin-top:5px;
+}
+
+/* ######################### Log-in popover - registration#1 bubble ######################### */
+#homeLogin > .bubBody > #register01,
+#homeLogin > .bubBody > #register02,
+#homeLogin > .bubBody > #forget01,
+#homeLogin > .bubBody > #login01 {
+	display:none;
+}
+#homeLogin > .bubBody > #register01 > div {
+	padding:8px 22px;
+}
+
+#homeLogin > .bubBody > #register01 > div > p:first-child {
+	padding-bottom:3px;
+	text-align:center;
+	font-size:0.8em;
+}
+
+#homeLogin > .bubBody > #register01 > div > form input[type=text]:first-child {
+	width:170px;
+	margin:0 4px 0 10px;
+}
+
+#homeLogin > .bubBody > #register01 > div > form input[type=text] + input {
+	width:100px;
+	margin:0 4px 0 0;
+}
+
+#homeLogin > .bubBody > #register01 > div > form input[type=password]:first-child {
+	width:80px;
+	margin:0 4px 0 10px;
+}
+
+#homeLogin > .bubBody > #register01 > div > form input[type=password] + input[type=password] {
+	width:83px;
+	margin:0 4px 0 0;
+}
+
+#homeLogin > .bubBody > #register01 > div > form input[type=submit] {
+	width:83px;
+	margin:0 0 0 19px;
+}
+
+#homeLogin > .bubBody > #register01 > div > form > p {
+	clear:left;
+	position:relative;
+	padding-top:0;
+	font-size:0.8em;
+}
+
+#homeLogin > .bubBody > #register01 > div > form > p:nth-child(2n-1) {
+	margin-top:5px;
+}
+
+#homeLogin > .bubBody > #register01 > div > p > a {
+	font-weight:bold;
+}
+
+#homeLogin > .bubBody > #register01 > div > form > p > span {
+	display:block;
+	font-size:.9em;
+	color:#90a5bc;
+	float:left;
+	text-transform:uppercase;
+}
+
+#homeLogin > .bubBody > #register01 > div > form > p:first-child > span:first-child,
+#homeLogin > .bubBody > #register01 > div > form > p:first-child + p + p > span:first-child,
+#homeLogin > .bubBody > #register01 > div > form > p:first-child + p + p + p + p > span:first-child {
+	margin-left:10px;
+}
+
+#homeLogin > .bubBody > #register01 > div > form > p:first-child > span:first-child + span {
+	position:absolute;
+	left:184px;
+}
+
+#homeLogin > .bubBody > #register01 > div > form > p:first-child + p + p + p + p > span:first-child + span {
+	position:absolute;
+	left:97px;
+}
+
+/* ######################### Log-in popover - forget#1 bubble ######################### */
+#homeLogin > .bubBody > #forget01 > div {
+	padding:8px 22px;
+}
+
+#homeLogin > .bubBody > #forget01 > div > form > p {
+	clear:left;
+	position:relative;
+	padding-top:0;
+	font-size:0.8em;
+}
+
+#homeLogin > .bubBody > #forget01 > div > form > p > span {
+	display:block;
+	font-size:.9em;
+	color:#90a5bc;
+	float:left;
+	text-transform:uppercase;
+}
+
+#homeLogin > .bubBody > #forget01 > div > form > p:first-child > span {
+	margin-left:10px;
+}
+
+#homeLogin > .bubBody > #forget01 > div > p:first-child {
+	color:#9e0b0f;
+	font-weight:bold;
+	font-size:1.1em;
+	text-align:center;
+	padding-bottom:8px;
+}
+
+#homeLogin > .bubBody > #forget01 > div > form input[type=text] {
+	width:220px;
+	margin:0 4px 0 10px;
+}
+
+#homeLogin > .bubBody > #forget01 > div > form input[type=submit] {
+	width:145px;
+	margin:8px 4px 0 11px;
+}
+
+#homeLogin > .bubBody > #forget01 > div > p {
+	text-align:center;
+	font-size:0.8em;
+}
+
+#homeLogin > .bubBody > #welcome01 > div p.alert,
+#homeLogin > .bubBody > #login01 > div p.alert,
+#homeLogin > .bubBody > #forget01 > div p.alert,
+#homeLogin > .bubBody > #register01 > div p.alert {
+	color:#9e0b0f;
+	font-weight:bold;
+	font-size:0.7em;
+	text-align:left;
+	padding-bottom:3px;
+	overflow:hidden;
+	display:none;
+}
+
+#homeLogin > .bubBody > #welcome01 > div p. alert:first-child,
+#homeLogin > .bubBody > #login01 > div p. alert:first-child,
+#homeLogin > .bubBody > #forget01 > div p. alert:first-child,
+#homeLogin > .bubBody > #register01 > div p. alert:first-child {
+	padding-top:0;
+}
+
+#homeLogin > .bubBody > #login01 > div a:hover,
+#homeLogin > .bubBody > #forget01 > div a:hover,
+#homeLogin > .bubBody > #register01 > div a:hover {
+	text-decoration:none;
+}
+
+#homeLogin > .bubBody > #register02 {
+	font-size:0.9em;
+	height:80px;
+	padding:20px;
+}
+
+
+/* BETA button stuff */
+#betaTag {
+	position:absolute;
+	top:-1px;
+	left:0;
+	z-index:100;
+	cursor:pointer;
+}
+
+#betaDrop {
+	position:absolute;
+	top:33px;
+	left:10px;
+	z-index:100;
+	width:450px;
+	border:solid #363f4e 1px;
+	border-radius:6px;
+	background-color:#f9fafb;
+	padding:15px;
+	display:none;
+}
+
+
+#betaDrop p.nonAlert {
+	font-size:.8em;
+	padding:10px;
+	font-weight:bold;
+	color:#fff;
+	background-color:#b84e51;
+	margin:5px;
+	margin-top:12px;
+	border:solid #9e0b0f 1px;
+	border-radius:4px;
+	display:none;
+}
+
+#betaDrop p.alert {
+	font-size:.8em;
+	font-weight:bold;
+	color:#b84e51;
+	margin: 0;
+	border-width:0;
+	margin-top:12px;
+	padding:0 12px;
+	display:none;
+}
+
+#betaDrop > div:first-child {
+	position:relative;
+}
+
+#betaDrop > div > h2 {
+	font-weight:bold;
+	color:#4d6476;
+}
+
+#betaDrop > div > p,
+#betaDrop > div > form > p {
+	font-size:.8em;
+	padding-top:9px;
+}
+
+#betaDrop > div > form > p > label {
+	font-size:.75em;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#4d6476;
+}
+
+#betaDrop > div > form > p > input[type="text"] {
+	width:200px;
+}
+
+#betaDrop > div > form > p > textarea {
+	margin-bottom:0;
+	resize:none;
+	font-size:1.05em;
+}
+
+#betaDrop > div > form > p > input[type="submit"] {
+	width:70px;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+#betaDrop > div > p#classic {
+	float:right;
+	position:relative;
+	top:-35px;
+	width:127px;
+	margin:0 0 7px 15px;
+	font-size:.6em;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+#betaDrop > div > p#classic > a > img {
+	border:solid #363f4e 1px;
+	border-radius:4px;
+}
+
+#betaDrop > div > p#classic > a > img:hover {
+	opacity:.85;
+}
+
+#betaDrop > div#betaArrow {
+	position:absolute;
+	top:-11px;
+	left:45px;
+}
+
+#betaDrop > #betaAware {
+	position:absolute;
+	top:0;
+	left:451px;
+	width:380px;
+	border:solid #363f4e 1px;
+	border-radius:6px;
+	background-color:#fddbb6;
+	padding:15px;
+	}
+#betaDrop > #betaAware h2 {
+	color:#8d5a22;
+	}
+#betaDrop > #betaAware > ul {
+	padding-top:8px;
+	font-size:.8em;
+	}
+
+.menuDrop_banBot {padding-top:8px;}
+
+/*** Media Queries ***/
+@media all and (max-width: 768px) {
+    #betaTag {
+        display: none;
+    }
+}
+
