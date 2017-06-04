@@ -39,7 +39,7 @@ class Fishingpole::Poles
 
     def self.titles
       # self.scrape_target
-      puts "enter '1 to 5' consequtively for listings"
+      puts "enter '1 to 5' consecutively for listings"
       input = gets.to_i
       if input == 1
         range = self.all[0..9]
@@ -83,9 +83,9 @@ class Fishingpole::Poles
       1 for Port Aransas,
       2 for South Padre,
       3 for Galveston,
-      4 for Montgomery
+      4 for Montgomery,
       5 for Fulton,
-      6 for LeagueCity
+      6 for LeagueCity,
       7 for CorpusChristi,
       8 for Waller,
       9 for Rockport"
