@@ -41,11 +41,24 @@ class Fishingpole::Poles
       # self.scrape_target
       puts "enter '1 to 5' consequtively for listings"
       input = gets.to_i
-      self.all
+      if input == 1
+        range = self.all[0..9]
+      elsif input == 2
+        range = self.all[10..19]
+      elsif input == 3
+        range = self.all[20..29]
+      elsif input == 4
+        range = self.all[30..39]
+      elsif input == 5
+        range = self.all[40..49]
+      elsif input == 6
+        range = self.all[50..59]
+      end
+      results2 = range
       if input == 1
         counter = 0
         while counter < 1
-          self.all[0..9].each do |title|
+          results2.each do |title|
             title_detail = [
              "Resort Name",
              "Resort Location",
@@ -62,98 +75,13 @@ class Fishingpole::Poles
           end
           counter = counter + 1
         end
-      elsif input == 2
-        counter = 0
-        while counter < 1
-          self.all[10..19].each do |title|
-            title_detail = [
-             "Resort Name",
-             "Resort Location",
-             "URL",
-             "Description",
-             "Features"
-            ]
-            #puts "#{self.all[index]}"
-            puts "_____________________________________________________"
-            title.instance_variables.each_with_index do |var, index|
-              puts "#{title_detail[index]}: #{title.instance_variable_get(var)}"
-            end
-            puts "_____________________________________________________"
-          end
-          counter = counter + 1
-        end
-      elsif input == 3#problem starts here re: failure to issue puts
-        counter = 0
-        while counter < 1
-          self.all[20..29].each do |title|
-            title_detail = [
-             "Resort Name",
-             "Resort Location",
-             "URL",
-             "Description",
-             "Features"
-            ]
-            #puts "#{self.all[index]}"
-            puts "_____________________________________________________"
-            title.instance_variables.each_with_index do |var, index|
-              puts "#{title_detail[index]}: #{title.instance_variable_get(var)}"
-            end
-            puts "_____________________________________________________"
-          end
-          counter = counter + 1
-        end
-      elsif input == 4
-        counter = 0
-        while counter < 1
-          self.all[30..39].each do |title|
-            title_detail = [
-             "Resort Name",
-             "Resort Location",
-             "URL",
-             "Description",
-             "Features"
-            ]
-            #puts "#{self.all[index]}"
-            puts "_____________________________________________________"
-            title.instance_variables.each_with_index do |var, index|
-              puts "#{title_detail[index]}: #{title.instance_variable_get(var)}"
-            end
-            puts "_____________________________________________________"
-          end
-          counter = counter + 1
-        end
-      elsif input == 5
-        counter = 0
-        while counter < 1
-          self.all[40..49].each do |title|
-            title_detail = [
-             "Resort Name",
-             "Resort Location",
-             "URL",
-             "Description",
-             "Features"
-            ]
-            #puts "#{self.all[index]}"
-            puts "_____________________________________________________"
-            title.instance_variables.each_with_index do |var, index|
-              puts "#{title_detail[index]}: #{title.instance_variable_get(var)}"
-            end
-            puts "_____________________________________________________"
-          end
-          counter = counter + 1
-        end
-      elsif input == 6
-        puts "exiting the program"
-        exit
-      else
-        puts "try again"
       end
       self.search
     end
     def self.search
       puts "which location would you like?
       1 for Port Aransas,
-      2 for South Padre
+      2 for South Padre,
       3 for Galveston,
       4 for Montgomery
       5 for Fulton,
@@ -181,7 +109,6 @@ class Fishingpole::Poles
       elsif user_input == "9"
         location = "Rockport,Texas,UnitedStates"
       end
-
      results = self.all.select {|x| x.location == location} #????
       results.each do |location|
         puts "Name: #{location.name}"
@@ -189,7 +116,6 @@ class Fishingpole::Poles
         puts "Profile_url: #{location.profile_url}"
         puts "---------------------------------------------"
       end
-
     end
 #=>   a, dog, cat
 end

@@ -21,7 +21,7 @@ class Fishingpole::CLI
   end
 
   def goodbye
-    puts "see you tomorrow for more fishingpole deals"
+    puts "see you tomorrow for more fishingpole resort deals"
   end
 end
   # Your code goes here...
