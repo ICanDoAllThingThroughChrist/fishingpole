@@ -3,7 +3,7 @@ class Fishingpole::Poles
   @@allitem = []
   @@allprice = []
   @@all = []
-  attr_accessor :name, :location, :profile_url, :description, :resort_feature, :id
+  attr_accessor :name, :location, :profile_url, :description, :resort_feature, :id, :resort_price
     def initialize(hash)
       hash.each do |key, value|
         self.send("#{key}=", value)
@@ -21,8 +21,8 @@ class Fishingpole::Poles
     end
 
     def self.scrape_target
-      html = open('http://www.resortsandlodges.com/resort-type/fishing-resorts/usa/texas/gulf-coast.html')
-      doc = Nokogiri::HTML(html)
+      html ="http://www.resortsandlodges.com/resort-type/fishing-resorts/usa/texas/gulf-coast.html"
+      doc = Nokogiri::HTML(open(html))
       scraped_resorts = doc.css('.row .ral-listing')
       scraped_resorts.each do |resort|
           self.new({
@@ -31,28 +31,21 @@ class Fishingpole::Poles
           location: resort.css('.location').text.split(" ")[0..5].join(""),
           profile_url: resort.css('a').attr('href').value,
           description: resort.css('p , .listing-body a').text,
-          resort_feature: resort.css('span , li').text
+          resort_feature: resort.css('li').text,
+          resort_price: resort.css('.rate-low-lodging span').text,
           })
           #binding.pry
         end
-    end
+    end 
 
     def self.titles
       # self.scrape_target
-      puts "enter '1 to 5' consecutively for listings"
+      puts "enter '1 or 2' consecutively for listings"
       input = gets.to_i
       if input == 1
         range = self.all[0..9]
       elsif input == 2
         range = self.all[10..19]
-      elsif input == 3
-        range = self.all[20..29]
-      elsif input == 4
-        range = self.all[30..39]
-      elsif input == 5
-        range = self.all[40..49]
-      elsif input == 6
-        range = self.all[50..59]
       end
       results2 = range
       if input == 1
@@ -64,9 +57,32 @@ class Fishingpole::Poles
              "Resort Location",
              "URL",
              "Description",
-             "Features"
+             "Features",
+             "Price"
             ]
-            #puts "#{self.all[index]}"
+            puts "_____________________________________________________"
+            title.instance_variables.each_with_index do |var, index|
+              puts <<~ EOF
+              "#{title_detail[index]}: 
+              #{title.instance_variable_get(var)}"
+              EOF
+            end
+            puts "_____________________________________________________"
+          end
+          counter = counter + 1
+        end
+      elsif input == 2
+        counter = 0
+        while counter < 1
+          results2.each do |title|
+            title_detail = [
+             "Resort Name",
+             "Resort Location",
+             "URL",
+             "Description",
+             "Features",
+             "Price"
+            ]
             puts "_____________________________________________________"
             title.instance_variables.each_with_index do |var, index|
               puts "#{title_detail[index]}: #{title.instance_variable_get(var)}"
@@ -110,12 +126,11 @@ class Fishingpole::Poles
         location = "Rockport,Texas,UnitedStates"
       end
      results = self.all.select {|x| x.location == location} #????
-      results.each do |location|
+     results.each do |location|
         puts "Name: #{location.name}"
         puts "Description: #{location.description}"
         puts "Profile_url: #{location.profile_url}"
         puts "---------------------------------------------"
       end
-    end
-#=>   a, dog, cat
+    end#=>   a, dog, cat
 end
