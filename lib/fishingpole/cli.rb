@@ -19,7 +19,11 @@ class Fishingpole::CLI
   end
 
   def self.titles
-      puts "enter '1 or 9' from listing below or '10' to Exit Program
+      puts "Select from listing below by entering its listing ID accordingly. 
+
+      For Example, for Port Aransas, Texas, Enter '1'
+      
+      To Exit: Enter'10' to Exit Program
       ____________________________________________
       1.Port Aransas,Texas,United States
 
