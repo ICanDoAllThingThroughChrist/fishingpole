@@ -19,32 +19,33 @@ class Fishingpole::CLI
   end
 
   def self.titles
-      puts "enter '1 or 2' for listings or '3' to Exit Program"
-      input = gets.to_i
-      if input == 1
-        range =  Fishingpole::Poles.all[0..6]
-      elsif input == 2
-        range = Fishingpole::Poles.all[7..15]
-      end
-      results2 = range
-      if input == 1
-        puts "which Resort Location would you like?"
-          results2.each.with_index(1) do |title, index|
-            puts "#{index}.#{title.location}"
-        end
-      elsif input == 2
-        puts "which location would you like?"
-          results2.each.with_index(1) do |title, index|
-            puts "#{index}.#{title.location}"
-        end
-      elsif input == 3
-      self.goodbye
-      end 
-      self.search
-  end
+      puts "enter '1 or 9' from listing below or '10' to Exit Program
+      ____________________________________________
+      1.Port Aransas,Texas,United States
 
+      2.South Padre Island,Texas, United States
+
+      3.Galveston,Texas, United States
+
+      4.Montgomery,Texas, United States
+
+      5.Fulton,Texas, United States
+
+      6.League City,Texas, United States
+
+      7.Corpus Christi,Texas,United States
+
+      8.Waller,Texas, United States
+
+      9.Rockport,Texas, United States
+      ____________________________________________"
+      self.search
+  end 
+  
   def self.search
+      puts "enter input"
       user_input = gets.strip
+      #binding.pry
       if user_input == "1"
         location = "PortAransas,Texas,UnitedStates"
       elsif user_input == "2"
@@ -63,6 +64,8 @@ class Fishingpole::CLI
         location = "Waller,Texas,UnitedStates"
       elsif user_input == "9"
         location = "Rockport,Texas,UnitedStates"
+      elsif user_input == "10"
+        self.goodbye
       end
      results = Fishingpole::Poles.all.select {|x| x.location == location} #????
      results.each do |location|
@@ -71,6 +74,7 @@ class Fishingpole::CLI
         puts "Description:#{location.description}"
         puts "Profile_url:#{location.profile_url}"
         puts "Price:#{location.resort_price}"
+        puts "Phone:#{location.phone}"
         puts "----------------------------------------------------------------------"
       end
       self.titles

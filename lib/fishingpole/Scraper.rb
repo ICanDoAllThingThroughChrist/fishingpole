@@ -12,8 +12,8 @@ class Fishingpole::Scraper
           description: resort.css('p , .listing-body a').text,
           resort_feature: resort.css('li').text,
           resort_price: resort.css('.rate-low-lodging span').text,
-          phone:resort.css('.listing-phone').text,
-          rating:resort.css('.pos').text,
+          phone: resort.css('.listing-phone').text.gsub(" ","").gsub("/N",""),
+          rating: resort.css('.pos').text
           })
         end
     end 
