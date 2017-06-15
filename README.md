@@ -1,6 +1,6 @@
 # Fishingpole
 
-Welcome to the Gulf Coast Fishing Resort Gem where you will find a listing of fishing resorts and you will be prompted with a list of cities where you can then choose to see a list of favorite resorts.
+Welcome to the Gulf Coast Fishing Resort Gem where you will find a listing of fishing resorts and you will be prompted with a list of cities where you ca n then choose to see a list of favorite resorts.
 
 ## Installation
 
