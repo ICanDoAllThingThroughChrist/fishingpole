@@ -48,28 +48,31 @@ class Fishingpole::CLI
   
   def self.search
       puts "enter input"
-      user_input = gets.strip
+      user_input = gets.to_i
       #binding.pry
-      if user_input == "1"
+      if user_input == 1
         location = "PortAransas,Texas,UnitedStates"
-      elsif user_input == "2"
+      elsif user_input == 2
         location = "SouthPadreIsland,Texas,UnitedStates"
-      elsif user_input == "3"
+      elsif user_input == 3
         location = "Galveston,Texas,UnitedStates"
-      elsif user_input == "4"
+      elsif user_input == 4
         location = "Montgomery,Texas,UnitedStates"
-      elsif user_input == "5"
+      elsif user_input == 5
         location = "Fulton,Texas,UnitedStates"
-      elsif user_input == "6"
+      elsif user_input == 6
         location = "LeagueCity,Texas,UnitedStates"
-      elsif user_input == "7"
+      elsif user_input == 7
         location = "CorpusChristi,Texas,UnitedStates"
-      elsif user_input == "8"
+      elsif user_input == 8
         location = "Waller,Texas,UnitedStates"
-      elsif user_input == "9"
+      elsif user_input == 9
+      #binding.pry
         location = "Rockport,Texas,UnitedStates"
-      elsif user_input == "10"
+      elsif user_input == 10
         self.goodbye
+      else
+        self.titles
       end
      results = Fishingpole::Poles.all.select {|x| x.location == location} #????
      results.each do |location|
