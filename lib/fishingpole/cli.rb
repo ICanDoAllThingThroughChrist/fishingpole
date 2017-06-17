@@ -18,6 +18,16 @@ class Fishingpole::CLI
         self.class.titles
   end
 
+  def self.continuation
+    puts "would you like to continue? enter 1 for 'yes' or 2 for 'no'"
+    input = gets.to_i 
+    if input == 1
+      self.titles
+    else  
+      self.goodbye
+    end 
+  end 
+
   def self.titles
       puts "Select from listing below by entering its listing ID accordingly. 
 
@@ -25,24 +35,17 @@ class Fishingpole::CLI
       
       To Exit: Enter'10' to Exit Program
       ____________________________________________
+
       1.Port Aransas,Texas,United States
-
       2.South Padre Island,Texas, United States
-
       3.Galveston,Texas, United States
-
       4.Montgomery,Texas, United States
-
       5.Fulton,Texas, United States
-
       6.League City,Texas, United States
-
       7.Corpus Christi,Texas,United States
-
       8.Waller,Texas, United States
-
       9.Rockport,Texas, United States
-      ____________________________________________"
+      ___________________________________________"
       self.search
   end 
   
@@ -84,6 +87,7 @@ class Fishingpole::CLI
         puts "Phone:#{location.phone}"
         puts "----------------------------------------------------------------------"
       end
+      self.continuation
       self.titles
   end
 

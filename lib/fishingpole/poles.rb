@@ -7,10 +7,12 @@ class Fishingpole::Poles
         self.send("#{key}=", value)
       end
       @@all << self
+      #@location = []
     end
 
     def self.all
       @@all
     end
+
 
 end
